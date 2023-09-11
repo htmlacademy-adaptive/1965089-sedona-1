@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Евгения Денисова](https://up.htmlacademy.ru/adaptive-individual/1/user/1965089).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Казаков](https://htmlacademy.ru/profile/id798257).
 
 ---
 
