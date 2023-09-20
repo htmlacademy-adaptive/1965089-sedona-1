@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <a class="header__logo">
+        <img class="header__logo-image" src="/source/img/logo-sedona.svg" width="185" height="96" alt="Логотип «Седона».">
+      </a>
+      <nav class="navigation">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="navigation__list">
+          <li class="navigation__item navigation__item--current">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="catalog.html" target="_blank">
+              Фото и видео
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="#">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="https://htmlacademy.ru/" target="_blank">
+              HTML ACADEMY
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="hero-inner">
+        <img class="hero-inner__image" src="/source/img/text-sedona.svg" width="229" height="39" alt="Седона.">
+        <h1 class="hero-inner__title">Фото и видео</h1>
+        <p class="hero-inner__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      </section>
+      <section class="gallery">
+        <h2 class="visually-hidden">Фотогалерея Седоны.</h2>
+        <ul class="gallery__list">
+          <li class="gallery__item item-gallery">
+            <img class="item-gallery__image" src="/source/img/gallery/photo-1.jpg" width="280" height="280" alt="Дорога и закат.">
+            <h3 class="item-gallery__title">Неродные просторы</h3>
+            <p class="item-gallery__author">Автор фото: Борис</p>
+            <button class="item-gallery__like like-button like-button__icon" type="button">
+              <span class="visually-hidden">Поставить лайк</span>
+              <span class="like-button__number">1350</span>
+            </button>
+          </li>
+          <li class="gallery__item item-gallery">
+            <img class="item-gallery__image" src="/source/img/gallery/photo-2.jpg" width="280" height="280" alt="Растения Седоны.">
+            <h3 class="item-gallery__title">Местная растительность</h3>
+            <p class="item-gallery__author">Автор фото: Сергей</p>
+            <button class="item-gallery__like like-button like-button__icon" type="button">
+              <span class="visually-hidden">Поставить лайк</span>
+              <span class="like-button__number">143</span>
+            </button>
+          </li>
+          <li class="gallery__item item-gallery">
+            <img class="item-gallery__image" src="/source/img/gallery/photo-3.jpg" width="280" height="280" alt="Дорога в горах.">
+            <h3 class="item-gallery__title">Дорога на север</h3>
+            <p class="item-gallery__author">Автор фото: Петр</p>
+            <button class="item-gallery__like like-button like-button__icon" type="button">
+              <span class="visually-hidden">Поставить лайк</span>
+              <span class="like-button__number">96</span>
+            </button>
+          </li>
+          <li class="gallery__item item-gallery">
+            <img class="item-gallery__image" src="/source/img/gallery/photo-4.jpg" width="280" height="280" alt="Каньон Седоны.">
+            <h3 class="item-gallery__title">Дорога на север</h3>
+            <p class="item-gallery__author">Автор фото: Петр</p>
+            <button class="item-gallery__like like-button like-button__icon" type="button">
+              <span class="visually-hidden">Поставить лайк</span>
+              <span class="like-button__number">254</span>
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section class="video">
+        <h2 class="visually-hidden">Видеопрезентация Седоны.</h2>
+        <p class="video__title">Все еще сомневаетесь?</p>
+        <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <video class="video__play" width="280" height="177" controls="controls" poster="/source/img/video-poster.jpg">
+          <source src="#">
+         </video>
+      </section>
+    </main>
+    <footer class="footer">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="footer__tags hashtag">
+        <a class="hashtag__link" href="#" target="_blank">
+          #visitsedona
+        </a>
+      </div>
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" target="_blank">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__logo">
+          <img class="copyright__logo-image" src="/source/img/htmlacademy-logo.svg" width="27" height="34" alt="Логотип HTML Academy.">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
