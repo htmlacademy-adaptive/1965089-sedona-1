@@ -1,0 +1,15 @@
+.advantages__title {
+  @include title;
+}
+
+.advantages__list {
+  @include list-reset;
+}
+
+.advantages__item {
+  background-color: $third-bg;
+}
+
+.advantages__item--with-img {
+  @include advantages-with-img;
+}

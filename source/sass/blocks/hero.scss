@@ -1,0 +1,7 @@
+.hero {
+  background-image: url("../../img/index-hero-background.jpg"), url("../../img/index-hero-zigzag.svg");
+  background-color: $base-bg;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100% auto, 100% auto;
+  background-position: center bottom, center top;
+}
