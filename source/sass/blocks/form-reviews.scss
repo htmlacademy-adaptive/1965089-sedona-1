@@ -1,0 +1,17 @@
+.form-reviews__group {
+  border: none;
+}
+
+.form-reviews__title {
+  @include title;
+}
+
+.form-reviews__list {
+  @include list-reset;
+}
+
+.form-reviews__description {
+  @include text-form;
+  border: none;
+  background-color: $second-bg;
+}

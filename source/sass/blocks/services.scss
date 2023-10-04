@@ -1,0 +1,11 @@
+.services__item {
+  background-color: $light;
+}
+
+.services__list {
+  @include list-reset;
+}
+
+.services__title {
+  @include title;
+}

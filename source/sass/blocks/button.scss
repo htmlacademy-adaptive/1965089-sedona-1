@@ -1,0 +1,10 @@
+.button {
+  @include title;
+  font-family: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $light;
+  background-color: $base-bg;
+  cursor: pointer;
+  border: none;
+}

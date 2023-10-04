@@ -1,0 +1,7 @@
+.item-advantages__title {
+  @include title;
+}
+
+.item-advantages__image {
+  background-color: $base-bg;
+}
