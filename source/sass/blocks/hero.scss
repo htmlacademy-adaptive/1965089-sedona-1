@@ -1,7 +1,23 @@
-.hero {
-  background-image: url("../../img/index-hero-background.jpg"), url("../../img/index-hero-zigzag.svg");
+.hero__wrapper {
+  background-image: url("../../img/index-hero-zigzag.svg"), url("../../img/index-hero-background.jpg");
   background-color: $base-bg;
-  background-repeat: no-repeat, no-repeat;
-  background-size: 100% auto, 100% auto;
+  background-repeat: no-repeat;
   background-position: center bottom, center top;
+  padding: 90px 19px 28px;
+}
+
+.hero__image {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__image {
+    width: 450px;
+    height: 350px;
+  }
+}
+
+.hero__title {
+  @include hero-title;
 }

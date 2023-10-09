@@ -1,11 +1,37 @@
 .services__item {
   background-color: $light;
+  padding: 25px 18px;
+  text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .services__item {
+    text-align: center;
+    padding: 60px 33px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .services__item {
+    padding: 69px 50px;
+  }
 }
 
 .services__list {
   @include list-reset;
 }
 
+@media (min-width: $tablet-width) {
+  .services__list {
+    display: flex;
+  }
+}
+
 .services__title {
   @include title;
+  margin: 8px 0 16px;
+}
+
+.services__description {
+  margin: 0 auto;
 }

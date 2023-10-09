@@ -1,3 +1,19 @@
 .footer {
   background-color: $light;
+  padding: 33px 82px;
+  text-align: center;
+}
+
+.footer__tags {
+  margin-bottom: 30px;
+}
+
+.footer__social {
+  margin-bottom: 30px;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
