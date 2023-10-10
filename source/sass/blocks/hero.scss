@@ -1,3 +1,7 @@
+.hero {
+  text-align: center;
+}
+
 .hero__wrapper {
   background-image: url("../../img/index-hero-zigzag.svg"), url("../../img/index-hero-background.jpg");
   background-color: $base-bg;
@@ -6,18 +10,50 @@
   padding: 90px 19px 28px;
 }
 
+.hero__wrapper--inner {
+  padding: 52px 46px 67px;
+}
+
+.hero__wrapper--title {
+  padding: 37px 20px 25px;
+}
+
 .hero__image {
   display: block;
   margin: 0 auto;
 }
 
-@media (min-width: $tablet-width) {
-  .hero__image {
-    width: 450px;
-    height: 350px;
-  }
+.hero__image--inner {
+  display: block;
+  margin: 0 auto;
+  max-width: 229px;
 }
 
 .hero__title {
   @include hero-title;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.hero__description {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__wrapper--title {
+    padding: 66px 155px 25px;
+  }
+
+  .hero__image {
+    width: 450px;
+    height: 350px;
+  }
+
+  .hero__image--inner {
+    max-width: 457px;
+  }
+
+  .hero__title {
+    font-size: 30px;
+  }
 }

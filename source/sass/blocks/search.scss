@@ -3,36 +3,12 @@
   padding: 38px 18px 49px;
 }
 
-@media (min-width: $tablet-width) {
-  .search {
-    padding: 60px 166px 55px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .search {
-    padding: 60px 382px 66px;
-  }
-}
-
 .search__title {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   margin: 0;
   margin-bottom: 32px;
-}
-
-@media (min-width: $tablet-width) {
-  .search__title {
-    font-size: 30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .search__title {
-    line-height: 30px;
-  }
 }
 
 .search__description {
@@ -42,4 +18,24 @@
 
 .search__button {
   padding: 16px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .search {
+    padding: 60px 166px 55px;
+  }
+
+  .search__title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .search__title {
+    line-height: 30px;
+  }
+
+  .search {
+    padding: 60px 382px 66px;
+  }
 }

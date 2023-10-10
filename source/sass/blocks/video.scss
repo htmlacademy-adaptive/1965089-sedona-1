@@ -1,3 +1,29 @@
+.video {
+  padding: 17px 20px 0;
+  text-align: center;
+}
+
 .video__title {
-  @include inner-title;
+  @include hero-title;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    padding: 29px 60px 40px;
+  }
+
+  .video__title {
+    font-size: 30px;
+  }
+
+  .video__wrapper {
+    padding: 0 102px 33px 102px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    padding: 84px 200px 84px;
+  }
 }
