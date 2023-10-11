@@ -1,5 +1,7 @@
 .services__item {
   background-color: $light;
+  padding: 25px 18px;
+  text-align: left;
 }
 
 .services__list {
@@ -8,4 +10,26 @@
 
 .services__title {
   @include title;
+  margin: 8px 0 16px;
+}
+
+.services__description {
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .services__item {
+    text-align: center;
+    padding: 60px 33px;
+  }
+
+  .services__list {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .services__item {
+    padding: 69px 50px;
+  }
 }

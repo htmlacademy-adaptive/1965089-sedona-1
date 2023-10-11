@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -28,6 +29,8 @@
               Фото и видео
             </a>
           </li>
+        </ul>
+        <ul class="navigation__list">
           <li class="navigation__item">
             <a class="navigation__link" href="form.html" target="_blank">
               Форма отзыва
@@ -42,18 +45,20 @@
       </nav>
     </header>
     <main class="main-container">
-      <section class="hero-inner">
-        <div class="hero-inner__image-wrapper">
-          <img class="hero-inner__image" src="/img/text-sedona.svg" width="460" height="80" alt="Седона.">
+      <section class="hero">
+        <div class="hero__wrapper hero__wrapper--inner">
+          <img class="hero__image--inner" src="/img/text-sedona.svg" width="100%" height="auto" alt="Седона.">
         </div>
-        <h1 class="hero-inner__title">Фото и видео</h1>
-        <p class="hero-inner__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <div class="hero__wrapper--title">
+          <h1 class="hero__title">Фото и видео</h1>
+          <p class="hero__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
       </section>
       <section class="gallery">
         <h2 class="visually-hidden">Фотогалерея Седоны.</h2>
         <ul class="gallery__list">
-          <li class="gallery__item item-gallery">
-            <img class="item-gallery__image" src="/img/gallery/photo-1.jpg" width="1200" height="400" alt="Дорога и закат.">
+          <li class="gallery__item gallery__item--header item-gallery">
+            <img class="item-gallery__image" src="/img/gallery/photo-1.jpg" width="100%" height="auto" alt="Дорога и закат.">
             <h3 class="item-gallery__title">Неродные просторы</h3>
             <p class="item-gallery__author">Автор фото: Борис</p>
             <button class="item-gallery__like like-button like-button__icon" type="button">
@@ -62,7 +67,7 @@
             </button>
           </li>
           <li class="gallery__item item-gallery">
-            <img class="item-gallery__image" src="/img/gallery/photo-2.jpg" width="400" height="267" alt="Растения Седоны.">
+            <img class="item-gallery__image" src="/img/gallery/photo-2.jpg" width="100%" height="auto" alt="Растения Седоны.">
             <h3 class="item-gallery__title">Местная растительность</h3>
             <p class="item-gallery__author">Автор фото: Сергей</p>
             <button class="item-gallery__like like-button like-button__icon" type="button">
@@ -71,7 +76,7 @@
             </button>
           </li>
           <li class="gallery__item item-gallery">
-            <img class="item-gallery__image" src="/img/gallery/photo-3.jpg" width="400" height="267" alt="Дорога в горах.">
+            <img class="item-gallery__image" src="/img/gallery/photo-3.jpg" width="100%" height="auto" alt="Дорога в горах.">
             <h3 class="item-gallery__title">Дорога на север</h3>
             <p class="item-gallery__author">Автор фото: Петр</p>
             <button class="item-gallery__like like-button like-button__icon" type="button">
@@ -80,7 +85,7 @@
             </button>
           </li>
           <li class="gallery__item item-gallery">
-            <img class="item-gallery__image" src="/img/gallery/photo-4.jpg" width="400" height="267" alt="Каньон Седоны.">
+            <img class="item-gallery__image" src="/img/gallery/photo-4.jpg" width="100%" height="auto" alt="Каньон Седоны.">
             <h3 class="item-gallery__title">Дорога на север</h3>
             <p class="item-gallery__author">Автор фото: Петр</p>
             <button class="item-gallery__like like-button like-button__icon" type="button">
@@ -91,10 +96,12 @@
         </ul>
       </section>
       <section class="video">
-        <h2 class="visually-hidden">Видеопрезентация Седоны.</h2>
-        <p class="video__title">Все еще сомневаетесь?</p>
-        <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <video class="video__play" width="800" height="500" controls="controls" poster="/img/video-poster.jpg">
+        <div class="video__wrapper">
+          <h2 class="visually-hidden">Видеопрезентация Седоны.</h2>
+          <p class="video__title">Все еще сомневаетесь?</p>
+          <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </div>
+        <video class="video__play" width="100%" height="auto" controls="controls" poster="/img/video-poster.jpg">
           <source src="#">
         </video>
       </section>

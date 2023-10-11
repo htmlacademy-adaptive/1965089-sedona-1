@@ -1,5 +1,6 @@
 .navigation {
   margin: 0 auto;
+  width: 100%;
 }
 
 .navigation__list {
@@ -10,4 +11,33 @@
   font-weight: 700;
   color: $dark;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation__toggle {
+    display: none;
+  }
+
+  .navigation__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation__item {
+    padding-top: 18px;
+    padding-bottom: 17px;
+    width: 153px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation__item {
+    width: 240px;
+  }
 }
