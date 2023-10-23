@@ -8,7 +8,7 @@
   line-height: 26px;
   font-weight: 700;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 21px;
 }
 
 .search__description {
@@ -18,15 +18,21 @@
 
 .search__button {
   padding: 16px 0;
+  font-size: 21px;
 }
 
 @media (min-width: $tablet-width) {
   .search {
-    padding: 60px 166px 55px;
+    padding: 60px 155px 55px;
   }
 
   .search__title {
     font-size: 30px;
+    margin-bottom: 32px;
+  }
+
+  .search__description {
+    margin-bottom: 45px;
   }
 }
 

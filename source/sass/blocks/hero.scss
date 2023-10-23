@@ -6,8 +6,9 @@
   background-image: url("../../img/index-hero-zigzag.svg"), url("../../img/index-hero-background.jpg");
   background-color: $base-bg;
   background-repeat: no-repeat;
-  background-position: center bottom, center top;
-  padding: 90px 19px 28px;
+  background-position: center bottom, 50% 30%;
+  background-size: auto, cover;
+  padding: 90px 19px 85px;
 }
 
 .hero__wrapper--inner {
@@ -40,12 +41,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .hero__wrapper {
+    padding: 77px 154px 91px 153px;
+  }
+
   .hero__wrapper--title {
     padding: 66px 155px 25px;
   }
 
   .hero__image {
-    width: 450px;
+    width: 460px;
     height: 350px;
   }
 

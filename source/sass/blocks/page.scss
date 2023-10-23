@@ -20,7 +20,7 @@
 
 @media (min-width: $tablet-width) {
   .page__wrapper {
-    width: 768px;
+    min-width: 768px;
   }
 }
 

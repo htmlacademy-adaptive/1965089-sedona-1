@@ -14,7 +14,7 @@
       <a class="header__logo">
         <img class="header__logo-image" src="/img/logo-sedona.svg" width="185" height="96" alt="Логотип «Седона».">
       </a>
-      <nav class="navigation">
+      <nav class="navigation navigation--closed navigation--nojs">
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -29,8 +29,6 @@
               Фото и видео
             </a>
           </li>
-        </ul>
-        <ul class="navigation__list">
           <li class="navigation__item">
             <a class="navigation__link" href="form.html" target="_blank">
               Форма отзыва
@@ -58,7 +56,7 @@
         </div>
         <ol class="advantages__list">
           <li class="advantages__item advantages__item--with-img item-advantages">
-            <div class="item-advantages__wrapper">
+            <div class="item-advantages__wrapper item-advantages__wrapper--with-img ">
               <h3 class="item-advantages__title item-advantages__title--light">Настоящий городок</h3>
               <p class="item-advantages__number">— №1 —</p>
               <p class="item-advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
@@ -85,12 +83,12 @@
             </section>
           </li>
           <li class="advantages__item advantages__item--with-img advantages__item--reverse item-advantages">
-            <div class="item-advantages__wrapper">
+            <img class="item-advantages__image" src="/img/canyon-sedona.jpg" width="100%" height="auto" alt="Каньон в Седоне.">
+            <div class="item-advantages__wrapper item-advantages__wrapper--with-img ">
               <h3 class="item-advantages__title item-advantages__title--light">Там есть мост дьявола</h3>
               <p class="item-advantages__number">— №2 —</p>
               <p class="item-advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <img class="item-advantages__image" src="/img/canyon-sedona.jpg" width="100%" height="auto" alt="Каньон в Седоне.">
           </li>
           <li class="advantages__item item-advantages">
             <div class="item-advantages__wrapper">
@@ -160,6 +158,7 @@
       </div>
     </footer>
   </div>
+  <script src="/js/script.js"></script>
 </body>
 
 </html>
