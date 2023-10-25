@@ -14,6 +14,12 @@
 .search__description {
   margin: 0;
   margin-bottom: 32px;
+
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .search__button {
@@ -42,6 +48,6 @@
   }
 
   .search {
-    padding: 60px 382px 66px;
+    padding: 60px 371px 66px;
   }
 }

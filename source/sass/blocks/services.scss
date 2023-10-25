@@ -60,6 +60,12 @@
 
 .services__description {
   margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    br {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -67,6 +73,10 @@
     text-align: center;
     padding: 158px 37px 60px;
     min-width: 256px;
+  }
+
+  .services__item--food {
+    padding: 158px 50px 60px;
   }
 
   .services__list {

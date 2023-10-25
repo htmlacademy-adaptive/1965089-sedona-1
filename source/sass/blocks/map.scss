@@ -1,6 +1,7 @@
 .map {
   position: relative;
   max-height: 350px;
+  margin-bottom: 9px;
 }
 
 .map::before {
@@ -22,8 +23,18 @@
 }
 
 @media (min-width: $tablet-width) {
+  .map {
+    margin: 0;
+  }
+
   .map::before {
     left: 48%;
     bottom: 46%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map::before {
+    left: 49%;
   }
 }
