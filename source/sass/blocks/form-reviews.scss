@@ -15,24 +15,9 @@
   @include list-reset;
 }
 
-.form-reviews__list--name {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.form-reviews__list--phone {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.form-reviews__list--impression {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
+.form-reviews__list--name,
+.form-reviews__list--phone,
+.form-reviews__list--impression,
 .form-reviews__list--attractions {
   display: flex;
   flex-direction: column;

@@ -55,11 +55,13 @@
 .item-reviews__control-input[type="radio"]:checked + .item-reviews__control-mark::before {
   content: "";
   position: absolute;
-  width: 46px;
-  height: 46px;
-  background-image: url("../../img/marker-icon.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  width: 16px;
+  height: 16px;
+  background-color: #333333;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .item-reviews__control-mark {
