@@ -19,9 +19,12 @@
 }
 
 .video__play {
+  background-image: url("../../img/video-phone.jpg");
+  background-repeat: no-repeat;
+  background-color: $base-bg;
+  background-size: cover;
   display: block;
-  object-fit: cover;
-  height: 177px;
+  min-height: 177px;
 }
 
 @media (min-width: $tablet-width) {
@@ -30,7 +33,9 @@
   }
 
   .video__play {
-    height: 500px;
+    background-image: url("../../img/video-desktop.jpg");
+    background-repeat: no-repeat;
+    min-height: 500px;
   }
 
   .video__title {

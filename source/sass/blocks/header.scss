@@ -1,16 +1,9 @@
 .header {
   display: flex;
-  position: relative;
 }
 
 .header__logo-image {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-}
-
-@media (max-width: $mobile-width-only) {
-  .header {
-    height: 56px;
-  }
 }
