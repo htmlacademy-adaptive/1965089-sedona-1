@@ -23,8 +23,15 @@
   background-repeat: no-repeat;
   background-color: $base-bg;
   background-size: cover;
+  background-position: center;
   display: block;
   min-height: 177px;
+}
+
+@media (min-resolution: 2dppx) {
+  .video__play {
+    background-image: url("../../img/video-phone@2x.jpg");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -36,6 +43,12 @@
     background-image: url("../../img/video-desktop.jpg");
     background-repeat: no-repeat;
     min-height: 500px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .video__play {
+      background-image: url("../../img/video-desktop@2x.jpg");
+    }
   }
 
   .video__title {
