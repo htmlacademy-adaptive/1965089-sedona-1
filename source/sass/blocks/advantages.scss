@@ -59,8 +59,12 @@
 
   .advantages__item--with-img {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr;
     grid-column: 1/-1;
+  }
+
+  .advantages__item--reverse {
+    grid-template-columns: 2fr 1fr;
   }
 
   .advantages__wrapper {
