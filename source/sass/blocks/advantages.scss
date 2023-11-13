@@ -29,10 +29,7 @@
 
 @media (max-width: $mobile-width-only) {
   .advantages__item--with-triangle {
-    background-image: url("../../img/advantages-triangle.svg");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 100%;
+    background-image: url("../../img/sprite.svg#advantages-triangle");
     padding-top: 36px;
   }
 
