@@ -138,6 +138,7 @@ export const build = gulp.series(
     html,
     scripts,
     svg,
+    stack,
     createWebp
   ),
 );
@@ -153,6 +154,7 @@ export default gulp.series(
     html,
     scripts,
     svg,
+    stack,
     createWebp
   ),
   gulp.series(
