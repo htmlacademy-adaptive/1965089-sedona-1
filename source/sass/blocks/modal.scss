@@ -1,18 +1,40 @@
 .modal {
   text-align: center;
+  background-color: $light;
+  width: 320px;
+  margin: 0;
+}
+
+.modal__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .modal__error {
-  padding: 40px;
+  padding: 45px 41px 35px;
+  margin: 116px auto;
 }
 
 .modal__success {
-  padding: 20px;
+  margin: 402px auto;
+}
+
+.modal__success-wrapper {
+  padding: 39px 37px 23px;
+}
+
+.modal__close {
+  display: none;
 }
 
 .modal__button {
   padding: 18px 63px 14px;
   margin: 0 auto;
+  min-width: 180px;
 }
 
 .modal__button--success {
@@ -20,12 +42,80 @@
   max-width: 458px;
 }
 
+.modal__button--success-wrapper {
+  padding: 20px;
+  background-color: $second-bg;
+}
+
 .modal__title {
-  @include hero-title;
+  @include title;
+  margin: 0 0 25px;
+}
+
+.modal__description {
+  margin: 0 0 28px;
 }
 
 @media (min-width: $tablet-width) {
+  .modal__title {
+    font-size: 30px;
+    line-height: 40px;
+    padding: 0 30px;
+    margin: 0 0 20px;
+  }
+
+  .modal__description {
+    margin: 0 0 48px;
+  }
+
+  .modal__error {
+    width: 400px;
+    padding: 50px 47px 49px;
+    margin: 283px auto;
+  }
+
+  .modal__success {
+    width: 640px;
+    margin: 162px auto;
+  }
+
+  .modal__success-wrapper {
+    padding: 44px 37px 7px;
+  }
+
+  .modal__button {
+    font-size: 21px;
+  }
+
   .modal__button--error {
     width: 272px;
+  }
+
+  .modal__button--success-wrapper {
+    padding: 44px 91px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal__error {
+    width: 400px;
+    padding: 48px 46px 49px;
+    margin: 244px auto;
+  }
+
+  .modal__title {
+    margin: 0 0 22px;
+  }
+
+  .modal__description {
+    margin: 0 0 48px;
+  }
+
+  .modal__success {
+    margin: 145px auto;
+  }
+
+  .modal__success-wrapper {
+    padding: 44px 37px 5px;
   }
 }

@@ -10,7 +10,9 @@
   position: relative;
 }
 
-.services__item--housing::before {
+.services__item--housing::before,
+.services__item--food::before,
+.services__item--souvenir::before {
   content: "";
   display: block;
   background-image: url("../../img/stack.svg#house-icon");
@@ -23,27 +25,11 @@
 }
 
 .services__item--food::before {
-  content: "";
-  display: block;
   background-image: url("../../img/stack.svg#burger-icon");
-  width: 40px;
-  height: 36px;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  position: absolute;
-  left: 18px;
 }
 
 .services__item--souvenir::before {
-  content: "";
-  display: block;
   background-image: url("../../img/stack.svg#gift-icon");
-  width: 32px;
-  height: 38px;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  position: absolute;
-  left: 22px;
 }
 
 .services__list {
@@ -60,7 +46,7 @@
 .services__description {
   margin: 0 auto;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width-only) {
     br {
       display: none;
     }
@@ -75,7 +61,11 @@
   }
 
   .services__item--food {
-    padding: 158px 50px 60px;
+    padding: 156px 50px 60px;
+  }
+
+  .services__item--souvenir {
+    padding: 153px 37px 60px;
   }
 
   .services__list {

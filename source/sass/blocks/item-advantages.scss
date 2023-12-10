@@ -16,6 +16,8 @@
 .item-advantages__image {
   background-color: $base-bg;
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .item-advantages__title--light {
@@ -53,11 +55,15 @@
 
 @media (min-width: $tablet-width) {
   .item-advantages__wrapper {
-    padding: 41px 48px;
+    padding: 41px 33px;
+  }
+
+  .item-advantages__wrapper--road {
+    padding: 41px 40px;
   }
 
   .item-advantages__wrapper--with-img {
-    padding: 52px 29px 30px;
+    padding: 52px 34px 30px 32px;
   }
 
   .item-advantages__title {
