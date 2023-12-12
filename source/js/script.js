@@ -1,3 +1,5 @@
+// Navigation
+
 let navMain = document.querySelector('.navigation');
 let navToggle = document.querySelector('.navigation__toggle');
 
@@ -12,3 +14,26 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('navigation--opened');
   }
 });
+
+// Popup catalog
+
+document.querySelectorAll('.item-gallery__image').forEach(img =>{
+  img.onclick = () => {
+    document.querySelector('.popup__wrapper').style.display = 'block';
+    document.querySelector('.popup__image').src = img.src;
+    document.querySelector('.popup__image').srcset = img.srcset;
+  }
+});
+
+document.querySelectorAll('.item-gallery__link > picture').forEach(source =>{
+  source.onclick = () => {
+    document.querySelector('.popup > picture > source').srcset = source.querySelector('picture > source').srcset;
+    document.querySelector('.popup > picture > source + source').srcset = source.querySelector('picture > source + source').srcset;
+  }
+});
+
+if (document.querySelector('.popup__button') !== null) {
+  document.querySelector('.popup__button').onclick = () => {
+    document.querySelector('.popup__wrapper').style.display = 'none';
+  }
+}

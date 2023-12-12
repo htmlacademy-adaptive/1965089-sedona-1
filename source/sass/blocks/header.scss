@@ -1,8 +1,9 @@
 .header {
   display: flex;
+  position: relative;
 }
 
-.header__logo-image {
+.header__logo {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
