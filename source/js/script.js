@@ -34,6 +34,7 @@ document.querySelectorAll('.item-gallery__link > picture').forEach(source =>{
   }
 });
 
-document.querySelector('.popup__button').onclick = () => {
-  document.querySelector('.popup__wrapper').style.display = 'none';
-}
+if (document.querySelector('.popup__button')!=null)
+  document.querySelector('.popup__button').onclick = () => {
+    document.querySelector('.popup__wrapper').style.display = 'none';
+  }
