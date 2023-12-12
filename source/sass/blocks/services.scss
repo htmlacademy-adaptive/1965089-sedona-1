@@ -45,12 +45,6 @@
 
 .services__description {
   margin: 0 auto;
-
-  @media (max-width: $mobile-width-only) {
-    br {
-      display: none;
-    }
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -99,6 +93,14 @@
     margin: 0;
     margin-bottom: 23px;
     font-size: 21px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .services__description {
+    br {
+      display: none;
+    }
   }
 }
 
