@@ -19,7 +19,7 @@ navToggle.addEventListener('click', function () {
 
 document.querySelectorAll('.item-gallery__image').forEach(img =>{
   img.onclick = () => {
-    document.querySelector('.popup__wrapper').style.display = 'block';
+    document.querySelector('.popup-wrapper').style.display = 'block';
     document.querySelector('.popup__image').src = img.src;
     document.querySelector('.popup__image').srcset = img.srcset;
   }
@@ -34,6 +34,6 @@ document.querySelectorAll('.item-gallery__link > picture').forEach(source =>{
 
 if (document.querySelector('.popup__button') !== null) {
   document.querySelector('.popup__button').onclick = () => {
-    document.querySelector('.popup__wrapper').style.display = 'none';
+    document.querySelector('.popup-wrapper').style.display = 'none';
   }
 }
