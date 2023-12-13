@@ -5,7 +5,7 @@
   margin: auto;
 }
 
-.modal__wrapper {
+.modal-wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -16,15 +16,15 @@
   flex-direction: column;
 }
 
-.modal__error {
+.modal--error {
   padding: 45px 41px 35px;
 }
 
-.modal__success-wrapper {
+.modal__title-wrapper {
   padding: 39px 37px 23px;
 }
 
-.modal__close {
+.modal-wrapper--close {
   display: none;
 }
 
@@ -39,7 +39,7 @@
   max-width: 458px;
 }
 
-.modal__button--success-wrapper {
+.modal__button-wrapper {
   padding: 20px;
   background-color: $second-bg;
 }
@@ -65,16 +65,16 @@
     margin: 0 0 48px;
   }
 
-  .modal__error {
+  .modal--error {
     width: 400px;
     padding: 50px 47px 49px;
   }
 
-  .modal__success {
+  .modal--success {
     width: 640px;
   }
 
-  .modal__success-wrapper {
+  .modal__title-wrapper {
     padding: 44px 37px 7px;
   }
 
@@ -86,13 +86,13 @@
     width: 272px;
   }
 
-  .modal__button--success-wrapper {
+  .modal__button-wrapper {
     padding: 44px 91px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .modal__error {
+  .modal--error {
     width: 400px;
     padding: 48px 46px 49px;
   }
@@ -105,7 +105,7 @@
     margin: 0 0 48px;
   }
 
-  .modal__success-wrapper {
+  .modal__title-wrapper {
     padding: 44px 37px 5px;
   }
 }
